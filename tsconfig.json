@@ -7,11 +7,12 @@
 		"noUnusedParameters": true,
 		"outDir": "./dist",
 		"sourceMap": true,
-		"types": ["node"],
+		"types": ["node", "node-fetch"],
         "declaration": true,
         "noUnusedLocals": true,
         "removeComments": false,
-        "target": "esnext"
+        "target": "esnext",
+		"resolveJsonModule": true
 	},
 	"exclude": [
 		"node_modules",

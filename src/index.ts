@@ -1,6 +1,6 @@
-/**
- * The mythical function
- */
-export default function foo(): string {
-	return 'bar';
-}
+export * from './errors/DiscordAPIError';
+export * from './errors/HTTPError';
+export * from './lib/REST';
+export * from './lib/RESTManager';
+export * from './lib/RequestHandler';
+export * from './util/Constants';

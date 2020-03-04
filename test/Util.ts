@@ -1,6 +1,6 @@
 import ava from 'ava';
-import util from '../dist';
+import { Routes } from '../dist/src';
 
 ava('sample test', (test): void => {
-	test.is(util(), 'bar');
+	test.is(Routes.application(), '/oauth2/applications/@me');
 });
