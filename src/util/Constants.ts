@@ -2,7 +2,7 @@ import * as Package from '../../package.json';
 
 import type { RESTOptions } from '../lib/RESTManager';
 
-export const UserAgent = `DiscordBot (@klasa/rest, ${Package.version}) Node.js/${process.version}`;
+export const UserAgent = `DiscordBot (${Package.repository.url}, ${Package.version})`;
 
 export const RestOptionsDefaults: Required<RESTOptions> = {
 	offset: 100,
