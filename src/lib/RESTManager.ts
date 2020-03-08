@@ -16,6 +16,7 @@ import type { Request, RouteIdentifier, REST } from './REST';
 const agent = new Agent({ keepAlive: true });
 
 export interface RESTOptions {
+	userAgentAppendix: string;
 	offset: number;
 	retries: number;
 	timeout: number;
@@ -128,7 +129,7 @@ export class RESTManager {
 
 		// Assign the basic request headers
 		const headers: Headers = {
-			'User-Agent': UserAgent,
+			'User-Agent': `${UserAgent} ${this.options.userAgentAppendix}`,
 			'X-RateLimit-Precision': 'millisecond'
 		};
 
