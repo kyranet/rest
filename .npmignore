@@ -19,6 +19,6 @@ coverage/
 azure-pipelines.yml
 test-results.xml
 .nycrc.json
-.typedoc.json
+typedoc.json
 .github/
 
