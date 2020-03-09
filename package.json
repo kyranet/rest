@@ -1,6 +1,6 @@
 {
   "name": "@klasa/rest",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Handles rest and ratelimits for pb.",
   "main": "dist/src/index.js",
   "scripts": {
