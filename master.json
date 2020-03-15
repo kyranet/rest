@@ -3888,6 +3888,7 @@
 							"kind": 1024,
 							"kindString": "Property",
 							"flags": {
+								"isPrivate": true,
 								"isExported": true
 							},
 							"comment": {
