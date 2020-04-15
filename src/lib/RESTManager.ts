@@ -5,7 +5,6 @@ import { mergeDefault } from '@klasa/utils';
 import { TimerManager } from '@klasa/timer-manager';
 import { Cache } from '@klasa/cache';
 
-
 import type { RequestInit } from 'node-fetch';
 
 import { RequestHandler } from './RequestHandler';
@@ -44,7 +43,7 @@ export class RESTManager {
 	/**
 	 * The options for this rest manager
 	 */
-	public options: RESTOptions;
+	public options: Required<RESTOptions>;
 
 	/**
 	 * Caches known hashes from the api route provided

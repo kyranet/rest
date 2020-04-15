@@ -148,7 +148,7 @@ export class RequestHandler {
 			// Handle buckets via the hash header retroactively
 			if (hash && hash !== this.hash) {
 				// Let library users know when ratelimit buckets have been updated
-				this.manager.rest.emit(RESTManagerEvents.Debug, `bucket hash update: ${this.hash} => ${hash} for ${options.method}-${routeID.route}`);
+				this.manager.rest.emit(RESTManagerEvents.Debug, `Bucket hash update: ${this.hash} => ${hash} for ${options.method}-${routeID.route}`);
 				// This queue will eventually be eliminated via attrition
 				this.manager.hashes.set(`${options.method}-${routeID.route}`, hash);
 			}

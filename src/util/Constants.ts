@@ -20,6 +20,7 @@ export const Routes = {
 	ban: (guildID: string, userID: string): string => `/guilds/${guildID}/bans/${userID}`,
 	bans: (guildID: string): string => `/guilds/${guildID}/bans`,
 	channel: (channelID: string): string => `/channels/${channelID}`,
+	crosspostMessage: (channelID: string, messageID: string) => `/channels/${channelID}/messages/${messageID}/crosspost`,
 	dms: (): string => `/users/@me/channels`,
 	emoji: (guildID: string, emojiID: string): string => `/guilds/${guildID}/emojis/${emojiID}`,
 	emojis: (guildID: string): string => `/guilds/${guildID}/emojis`,
