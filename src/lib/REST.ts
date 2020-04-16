@@ -1,6 +1,8 @@
 import { EventEmitter } from 'events';
 import { Snowflake } from '@klasa/snowflake';
+
 import { RESTManager, RESTOptions } from './RESTManager';
+import { CDN } from './CDN';
 
 export interface RouteIdentifier {
 	route: string;
@@ -32,6 +34,11 @@ export interface Request extends RequestOptions {
 export class REST extends EventEmitter {
 
 	/**
+	 * The CDN link builder
+	 */
+	public cdn: CDN;
+
+	/**
 	 * The rest manager for handling requests
 	 */
 	private manager: RESTManager;
@@ -42,6 +49,7 @@ export class REST extends EventEmitter {
 	public constructor(options: Partial<RESTOptions>) {
 		super();
 		this.manager = new RESTManager(this, options);
+		this.cdn = new CDN(this.manager.options.cdn);
 	}
 
 	/**

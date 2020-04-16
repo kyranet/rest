@@ -21,6 +21,7 @@ export interface RESTOptions {
 	timeout: number;
 	version: number;
 	api: string;
+	cdn: string;
 }
 
 export interface Headers {
