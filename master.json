@@ -1139,7 +1139,8 @@
 							"flags": {
 								"isPrivate": true,
 								"isExported": true,
-								"isConstructorProperty": true
+								"isConstructorProperty": true,
+								"isReadonly": true
 							},
 							"sources": [
 								{
@@ -5287,7 +5288,8 @@
 							"kindString": "Property",
 							"flags": {
 								"isProtected": true,
-								"isExported": true
+								"isExported": true,
+								"isReadonly": true
 							},
 							"comment": {
 								"shortText": "The sweeper to ensure queues don't memory leak"
@@ -5351,7 +5353,8 @@
 							"kindString": "Property",
 							"flags": {
 								"isPublic": true,
-								"isExported": true
+								"isExported": true,
+								"isReadonly": true
 							},
 							"comment": {
 								"shortText": "Caches known hashes from the api route provided"
@@ -5417,7 +5420,8 @@
 							"kindString": "Property",
 							"flags": {
 								"isPrivate": true,
-								"isExported": true
+								"isExported": true,
+								"isReadonly": true
 							},
 							"comment": {
 								"shortText": "The current request queues"
@@ -6313,7 +6317,8 @@
 							"flags": {
 								"isPrivate": true,
 								"isExported": true,
-								"isConstructorProperty": true
+								"isConstructorProperty": true,
+								"isReadonly": true
 							},
 							"comment": {
 								"shortText": "The hash that this RequestHandler handles"
@@ -6387,7 +6392,8 @@
 							"flags": {
 								"isPrivate": true,
 								"isExported": true,
-								"isConstructorProperty": true
+								"isConstructorProperty": true,
+								"isReadonly": true
 							},
 							"sources": [
 								{
@@ -6409,7 +6415,8 @@
 							"flags": {
 								"isPrivate": true,
 								"isExported": true,
-								"isConstructorProperty": true
+								"isConstructorProperty": true,
+								"isReadonly": true
 							},
 							"comment": {
 								"shortText": "The rest manager"
