@@ -10,7 +10,7 @@ export const RestOptionsDefaults: Required<RESTOptions> = {
 	retries: 1,
 	timeout: 15000,
 	version: 7,
-	api: 'https://discordapp.com/api',
+	api: 'https://discord.com/api',
 	cdn: 'https://cdn.discordapp.com'
 };
 
