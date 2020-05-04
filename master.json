@@ -7381,7 +7381,7 @@
 								"type": "intrinsic",
 								"name": "string"
 							},
-							"defaultValue": "\"https://discordapp.com/api\""
+							"defaultValue": "\"https://discord.com/api\""
 						},
 						{
 							"id": 168,
