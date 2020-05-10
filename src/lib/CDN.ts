@@ -5,7 +5,7 @@ import { ImageURLOptions, EmojiExtension } from '../types/InternalREST';
 const ALLOWED_EXTENSIONS = ['webp', 'png', 'jpg', 'jpeg', 'gif'];
 const ALLOWED_SIZES = Array.from({ length: 9 }, (__, i) => 2 ** (i + 4));
 
-function makeURL(base: string, { extension = 'webp', size }: ImageURLOptions = {}): string {
+function makeURL(base: string, { extension = 'png', size }: ImageURLOptions = {}): string {
 	if (extension && !ALLOWED_EXTENSIONS.includes(String(extension).toLowerCase())) throw new RangeError(`Invalid extension provided: ${extension}\nMust be one of: ${ALLOWED_EXTENSIONS.join(', ')}`);
 	if (size && !ALLOWED_SIZES.includes(size)) throw new RangeError(`Invalid size provided: ${size}\nMust be one of: ${ALLOWED_SIZES.join(', ')}`);
 
