@@ -21,4 +21,4 @@ test-results.xml
 .nycrc.json
 typedoc.json
 .github/
-
+tsconfig.eslint.json
